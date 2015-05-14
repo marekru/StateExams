@@ -1,0 +1,126 @@
+1. (?b) Èo je to gamut? 
+  -gamut je farebny priestor zariadenia resp. priestor farieb zobrazitelnych nejakym zariadenim (displej,tlaciaren...)
+2. (?b) Ako fungujú substraktívne skladanie farieb, popíšte CMYK.
+  -funguje to tak ze sa od podkladovej farby odobera intenzita v jej farebnych zlozkach
+  -CMYK sa pouziva pri tlaci
+  -komplementarny model k RGB
+3. (?b) Popíšte farebné modely tiedy Y (príklady aj popísa)
+  -farebne modely zalozene na oddeleni jasovej zlozky od farebnej
+  -koli TV- boli ciernobiele a farebne no stacil jeden signal
+  -YIQ - lima,in-phase(oranzovo-modry),quadrature(fialovo-zeleny)
+  -YUV - vypocitane z RGB s gamakorekciou U = B'-Y V = R'-Y
+  -YCbCr - skalovane YUV
+  -YCCK - YCbCr s pridanou ciernou
+4. (2b) Èo sú to McAdamove elipsy?
+  - toto uz mam nizsie napisane
+5. (?b) Na príklade popíšte metódu Floyd-Steinberg. (bola daná matica 4x4)
+  -error diffuse
+6. (?b) Vysvetlite algoritmus popularity.
+7. (?b) Aké sú podmienky optimality pre kvantovanie.
+  -bod bude vzdy prideleny k najblizsiemu regionu
+  -podmianka centroidu
+8. (?b) Èo je to Inverse colormaping.
+9. (?b) Napíšte vzorec dilatácie pre šedotónové obrázky.
+10. (?b) Vysvetlite princíp otvorenia mnoiny na príklade. (pr. 11 zo skusky 24.5.)
+11. (?b) Multivariate ordering - lexikografickı, reduced
+12. (?b) Morfologické operácie pre detekciu hrán v obraze.
+13. (?b) ?????multidomenzionálny gradient pre detekovanie vo farbe?
+14. (?b) Detekcia hrán vo farebnom obraze pomocou difference vector + opísa niektoré filtre.
+15. (?b) Aspoò 3 zákony celistvosti (Gestalt law)
+16. (?b) Aké sú podmienky korektnej segmentácie.
+17. (?b) Popíšte ako funguje algoritmus na segmentáciu obrazu split and merge.
+18. (?b) Popíšte ako funguje algoritmus na segmentáciu obrazu pomocou grafu, Normalized cut.
+
+BOL!
+1. (5b) Èo je to metamér? 
+  - metamery su spektralne rozne farby no pre ludske oko zdanlivo rovnake. Je to sposobene tym,
+    ze v oku mame tri typy buniek citlivych na farebne svetlo (capiky typu L,M,S). Tieto tri typy
+    su citlive na rozne vlnove dlzky. No a niektore vlnove dlzky mozu drazdit viacero typov capikov.
+    Preto je mozne, ze z viacero kombinacii vlnovych dlzok dostaneme rovnaky stimul. 
+2. (5b) Ako funguje color matching - munsellov atlas?
+   -priame urcovanie hodnot H,S,V nieje mozne,preto sa pouziva atlas farieb s ktorymi sa zistovana farba porovnava.
+    munsellov reprezentuje farbu v troch dimenziach (hue,value,chroma), ktore su vnemovo uniformne a nezavisle.
+    Hue-Red Yellow-Red Yellow Green-Yellow Green Green-Yellow Green Blue-Green Blue Purple-Blue Blue Red-Purple
+    Value (0-10) (svetla - tmava)
+    Chroma (0-20) (neutrala - saturovana)
+    
+3. (5b) CIE, CIE diagram, vlastnosti
+  -CIE  je medzinarodna komisia pre svetlo. Zaviedly model XYZ, ktoremu predchadzali experimenty s vnimanim ludskeho oka (trisimulus na L,M,S capikoch).
+   - nakreslit diagram, popisat. Vyznamne je definovanie bielej farby lebo podla nej sa potom urcuju skladane farby. 
+4. (5b) Popíšte uívate¾sky orientované farebné modely.
+  -su zalozene na tom ako ludia vnimaju farby
+  -prevod do rgb je nelinearny
+  -HSV -
+5. (2b) kvantovanie - obrazovo nezávislé metódy
+  -vyberieme K reprezentantov z farebneho priestoru nezavisle od frekvencie vyskytu v obraze
+   a kam nam padne farba (oblast reprezentanta v priestore farieb-napr. subkocka kocky v RGB priestore) tu farbu pouzijeme
+6. (6b) na príklade popíšte ordered dithering
+  -obraz rozdelime na bloky velkosti n krat n
+  -kazdy pixel bloku sa spracuje samostatne
+  -porovnanie s prahom
+  -prahove hodnoty su dane pseudonahodnymi cislami
+  -no a potom uz len porovnat a odprahovat
+7. (2b) èo je to patering?
+  -ked ma vystupne zadiadenie vyssie rozlisenie
+  -pixel sa nahradi blokom pixlov
+8. (2b) definujte chybu kvantovania.
+  -priemer kvadratickych chyb kvantovania. Chyba je dana ako vzdialenost originalnej farby od
+  farby ziskanej kvantovanim.
+9. (3b) pseudokód algoritmu Median cut
+10. (3b) napíšte vzorec erózie pre šedotónovı obraz
+11. (5b) na príklade vysvetlite zatvorenie mnoiny
+12. (3b) vysvetlite Multivariate ordering - marginal a reduced
+13. (2b) Popíšte output fusion methods pre detekovanie hrán vo farebnom obraze.
+14. (6b) vysvetlite detekciu hrán vo farebnom obraze pomocou vector order stat.
+15. (2b) Aká je kompletná segmentácia?
+16. (2b) Aspoò 3 zákony celistvosti (Gestalt law)
+17. (2b) Vysvetli podmienky, ktoré musí spåòa korektná segmentácia?
+18. (3b) Popíš Region growing algoritmus.
+
+1. hit and miss
+2.(5b) ako v nima ludske oko farby
+  -oko obsahuje svetlocitlive bunky tycikny a capiky. Tycinky su citlive na intenzitu cize su urcene na ciernobiele (videnie v sere).
+  Potom mame capiky, ktore su typov L,M,S a su cilive na rozne rozsahy vlnovych dlzok svetla. L-dlhe M-stredne S-kratke. Tieto bunky generuju
+  na zaklade vlnovych dlzok a velkosti svetelneho toku stimuly ktore sa potom skladaju do vyslednej farby.
+3. vysvetli halftonig a ditering
+4. co je kvantovanie a metody
+5 ake rozdelujeme farebne modely a strucne popis
+  -HW orientovane
+    - RGB,televizne,CMYK
+  -Uzivatelsky orientovane
+    -HSL,HSV,HSI
+  -Vnemovo-rovnomerne
+    -CIE Lab,Luv WUV
+6. MCadamove elpisy
+  -v CIE diagrame chromatickosti euklidovske vzdialenosti nezodpovedaju ako odlisne farby vnimame. MCAdamsove elpispy su 
+  prave oblasti(na konture elipsy) v ktorych sa nam farba zda rovnaka. Tvar a velkost elips bola ziskana statisticky teda
+  priamo testovali ludi ako farby vnimaju.
+7. princip mrf
+
+----------------------------------------------------------------
+Rastislav Kamenickı Pokusim sa spisat co bolo na dnesnej pisomke:
+17otazok dokopy na 70 minut
+2 bodovoe stacilo 1 vetou
+3 bodove 2 vetami
+5 bodove uz lepsie popisat
+6 bodova bol len ten priklad na konci
+
+- ako vnima ludske oko farby
+- Ako fungujú substraktívne skladanie farieb, popíšte CMYK.
+- Èo je to gamut?
+- gamma korekcia
+- MCadamove elpisy
+- CIE diagram, vlastnosti
+- co je ditering a ake druhy pozname
+- ako rozdelujeme farebne modely a strucne popis
+- popis normalized cut
+- preco nastavaju problemy pri konverzii do sedourovnoveho obrazku
+- ako funguje grab cut
+- ake premenne updatujeme pri GMM
+- aky je rozdiel pri segmentacii s k-means a GMM
+- aka chyba nastava pri algoritme popularity
+- popis algoritmus diverzity a modifikovany algoritmus diverzity
+- co je inverse colormapping
+- Na príklade popíšte metódu Floyd-Steinberg. (bola daná matica 4x4)
+
+PS: ako pozeram vsetky otazky, stacilo sa naucit prednasky 1 - 6, 10

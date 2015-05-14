@@ -1,0 +1,73 @@
+1.) ikonické dáta
+2.) popis retazoveho kodu
+3.) 2 obrazky a urob RL kod
+4.) Quadtree, popis a porovnaj s T-pyramidou
+5.) co je to pinhole v kamere
+6.) digitalizacia a kvantizacia-vysvetli
+7.) vyhladenie vysvetli postup
+8.) naco sa vyuziva fourier
+9.) ako vplyva na obrazok odstranenie vysokych frekvencii
+10.) vysvetli ciastocnu segmentaciu
+11.) kriteria korektnej segmentacie
+12.) watershed
+13.) co je to klasifikator
+14.) co su linearne separabilne triedy
+15.) hierarchicke riadenie porozumenia obrazu
+16.) diskretne oznacenie sceny
+17.) marrov prinos pre CV
+18.) 3 urovne reprezentacie 3D sceny
+19.) ucelove videnie
+20.) 4 suradnicove sustavy
+21.) 2 pripady pri geometrii 2 kamier
+22.) epipolarna geometria
+23.) erozia-vplyvy na binarny obraz
+24.) ake morfologicke operacie su pri closingu
+
+1.) Multispektralny obraz
+2.) Co su to a kde sa vyuzivaju grafove struktury. 
+3.) Èo je vzorkovanie obrazu, kde a kedy sa používa? Co je tam problematicke? Vysvetlit.
+4.) Preco sa pri snímaní obrazu používajú šošovky.
+5.) Vysvetlite blooming, kde sa s nim stretavame
+6.) Preco su nevyhodne separabilne filtre.
+7.) Vysvetlite ako pracuje canny.
+8.) Comu zodpoveda hodnota F(0, 0) pri FT.
+9.) Ako treba prerobit hodnoty FT ked ich chceme vizualizovat?
+10.) Popis kvadranotve stromy, ich podobnosti, rozdiely s T pyramidami.
+11.) Ake su problemy pri k-means klasteringu?
+12.) Co sa stane ak zvacsime ohniskovu vzdialenost?
+13.) 3 prístupy pri rozpoznávaní obrazu.
+14.) Preco sa pouziva kernel pri SVM?
+15.) Vysvetlite overfitting a underfitting pri klasifikacii.
+16.) Vysvetlite pravdepodobnostne oznacenie sceny.
+17.) Vysvetlite geneticku interpretaciu obrazu.
+18.) Marrov prinos.
+19.) 2 pripady pri kalibracii kamery.
+20.) Kedy sa vyuziva epipolarna geom.
+21.) Otvorenie - vysvetlit + priklad.
+
+
+1.) Typy datovych struktur
+2.) Relacne data 
+3.) M-pyramidy a T-pyramidy
+4.) Co je high-pass a low-pass filter
+5.) Typy hranovych operatorov
+6.) Nyquist sampling theory o co tam ide
+7.) Co je uplna segmentacia?
+8.) Co je kalibracia kamery, ake parametre treba
+9.) Co znamena k v k-means a na co sluzi k-means
+10.) Co su linearne separabilne triedy a separabilne triedy
+11.) Co je SVM
+12.) Nehierarchicke riadenie porozumenia
+13.) Priklady region based segmentacie
+14.) Marrova teoria
+15.) 3 urovne reprezentacie 3D sceny
+16.) 4 suradnicove systemy + strucne popisat
+17.) Co je kanonicke stereo
+18.) Ake dva parametre sa zadavaju pri zovseobecnenej Hough transformacii ciar 
+19.) Nejaky obrazok Fourier Transformacie, a ako vyzeral povodny obrazok
+20.) Rozlozte tento kernel (Gaussian) na horizontalny a vertikalny
+1 4 6 4 1
+4 16 24 16 4
+6 24 36 24 6
+4 16 24 16 4
+1 4 6 4 1

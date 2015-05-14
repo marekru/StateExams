@@ -2,7 +2,7 @@
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style type="text/css">
-					.predmet {margin:30px;width:17cm;}
+					.predmet {margin:30px;width:90%;}
 					.kluc {
 						font-family:Arial;
 						font-size:10px;
@@ -13,7 +13,7 @@
 					.hodnota {
 						font-family:Verdana;
 						font-size:11px;
-						color:#0000ff;
+						color:#000000;
 						float:left;
 						padding-left:5px;
 						font-style:italic;
@@ -22,10 +22,12 @@
 						font-family:Arial;
 						font-size:10px;
 						font-weight:bold;
-						background-color:#dddddd;
+						background-color: white;
 						text-align:center;
 					}
-					p { margin:0px; }
+					.indent{
+						margin-left: 3em;
+					}
 				</style>
 </head>
 <body>
@@ -51,45 +53,129 @@
 <tr>
 <td>
 <div style="float:none;" class="kluc">Obsahov&aacute; n&aacute;plň št&aacute;tnicov&eacute;ho predmetu:</div>
-<div class="hodnota">Obsahov&aacute; n&aacute;plň št&aacute;tnicov&eacute;ho predmetu<p>    *  Kuželosečky, ich klasifik&aacute;cia; z&aacute;vislosť klasifik&aacute;cie od typu roviny; vyšetrovanie tvaru rovinnej krivky; priesečn&iacute;ky priamky s krivkou, dotyčnica, singul&aacute;rne body, inflexn&eacute; body; kubick&eacute; krivky; weierstrassov norm&aacute;lny tvar; wliptick&eacute; krivky a ich využitie.</p>
-<p>    * Pokročil&eacute; techniky predspracovania obrazu; techniky rozpozn&aacute;vania objektov; porozumenie 3D obrazu; poč&iacute;tačov&eacute; videnie s jednou kamerou; stereovidenie.</p>
-<p>    * Referenčn&yacute; model poč&iacute;tačovej grafiky, s&uacute;radnicov&eacute; syst&eacute;my a ich transformacie, rozširenie modelu pre augmented reality; pracovna stanica a jej funkčnosť; k&oacute;dovanie grafickej informacie, hierarchia obrazu a graf sc&eacute;ny; fyzick&eacute; a logick&eacute; vstupn&eacute; zariadenia, ISO model vstupu, vstupn&eacute; režimy, programovanie interakcie; oknov&eacute; syst&eacute;my, ich strukt&uacute;ra a funkčnosť.</p>
-<p>    * Kan&aacute;l met&oacute;dy sledovania l&uacute;ča; v&yacute;počet farieb renderovacou rovnicou; probl&eacute;m viditeľnosti a tieňa; glob&aacute;lny osvetľovac&iacute; model; met&oacute;dy zobrazenia sc&eacute;ny množinou obr&aacute;zkov.</p>
-<p>    * 1.	Grafick&aacute; pipeline modern&eacute;ho hardv&eacute;ru, framebuffer, buffer objekty, použ&iacute;van&eacute; s&uacute;radnicov&eacute; priestory, druhy shader programov, renderovanie do text&uacute;ry, druhy optimalizačn&yacute;ch techn&iacute;k (frustum, occlusion, backface culling), pr&iacute;klad shader programov. Tieňovanie a text&uacute;rovanie, z&aacute;kladn&eacute; princ&iacute;py a rozdiely medzi jednotliv&yacute;mi mapovaniami (environment, cube, sphere, bump, normal, paralax, relief), tangenci&aacute;lny priestor (na co sl&uacute;ži, v&yacute;počet). </p>
-<p>a.       Z&aacute;kladn&eacute; členenie zobrazovacieho kan&aacute;lu, per-vertex oper&aacute;cie a transform&aacute;cie, rasteriz&aacute;cia, per-fragment oper&aacute;cie, framebuffer je množina bufferov do ktor&yacute;ch sa zapisuje v&yacute;sledok pri vykresľovan&iacute;, z ak&yacute;ch bufferov sa sklad&aacute;(color, depth, stencil).</p>
-<p>b.      Pop&iacute;sať sp&ocirc;soby zad&aacute;vania geometrie a r&ocirc;znych atrib&uacute;tov vrcholov, rozdiel medzi vertex arrays a vertex buffer objects.</p>
-<p>c.       S&uacute;radnicov&eacute; syst&eacute;my a transform&aacute;cie medzi nimi, lok&aacute;lny, svetov&yacute;, kamerov&yacute;, orez&aacute;vac&iacute;, normalizovan&yacute; priestor</p>
-<p>d.      Pop&iacute;sať vertex, geometry, tesselation, fragment, compute shader, ich v&yacute;znam v r&aacute;mci pipeline, jeden jednoduch&yacute; pr&iacute;klad vertex+fragment programov, m&ocirc;že byť v pseudok&oacute;de</p>
-<p>e.       Vykresľovanie do text&uacute;ry miesto na obrazovku, použitie frame buffer objektov(FBO), na čo sa to použ&iacute;va, vykresľovanie do viacer&yacute;ch text&uacute;r naraz.</p>
-<p>f.       Pop&iacute;sať frustum, occlusion, backface culling, ako vedia ovplyvniť vykresľovanie.</p>
-<p>2.	Lok&aacute;lne osvetľovacie modely, text&uacute;rovanie a druhy text&uacute;r, mapovanie a filtr&aacute;cia text&uacute;r, pop&iacute;sať princ&iacute;py environment, bump, normal mapovania, text&uacute;rovac&iacute; a tangenci&aacute;lny priestor, pr&iacute;klad shader programov.</p>
-<p>a.       Phongov a Blinn-Phongov osvetlovac&iacute; model, zložky(ambientna, dif&uacute;zna, zrkadlov&aacute;) a parametre v osvetľovacej rovnici (materi&aacute;ly, svetl&aacute;, vektory N, V, L, R, H). Pr&iacute;klady ďalš&iacute;ch osvetľovac&iacute;ch modelov (Oren-Nayar, Cook-Torrance)</p>
-<p>b.      Druhy text&uacute;r a ich s&uacute;vislosť s osvetľovacou rovnicou (dif&uacute;zna, gloss, norm&aacute;lov&aacute;, bump text&uacute;ra). Text&uacute;rovac&iacute; priestor a jeho použitie pre mapovanie text&uacute;r. Wrap m&oacute;dy pri text&uacute;rovan&iacute;. Nearest a biline&aacute;rna filtr&aacute;cia text&uacute;r.</p>
-<p>c.       Pop&iacute;sať tangenci&aacute;lny priestor ako rozš&iacute;renie text&uacute;rovacieho priestoru, d&ocirc;vod jeho použitia. Transform&aacute;cia z tangeni&aacute;lneho do objektov&eacute;ho priestoru, v&yacute;počet tejto transform&aacute;cie. Použitie pre normal mapping.</p>
-<p>d.      Pr&iacute;klad Phongovho osvetľovacieho modelu s použit&iacute;m vertex a fragment programov.</p>
-<p>3.	Glob&aacute;lne osvetľovacie modely na GPU, aproxim&aacute;cia odrazov a priehľadnosti, met&oacute;da sledovania l&uacute;ča na GPU, ur&yacute;chľovacie techniky.</p>
-<p>a.       Rozdiel medzi lok&aacute;lnym a glob&aacute;lnym osvetľovac&iacute;m modelom. Jednoduch&eacute; aproxim&aacute;cie glob&aacute;lneho osvetľovanie (použitie množstva priamich svetiel, light proxies, light probes).</p>
-<p>b.      Alfa blending pre jednoduch&uacute; priehľadnosť. Renderovanie do text&uacute;r a určenie reflection a refraction m&aacute;p. Fresnelov efekt a jeho v&yacute;počet. Renderovanie vodnej hladiny.</p>
-<p>c.       Reprezent&aacute;cia sc&eacute;ny pri GPU raytracingu. Paralern&eacute; spracovanie l&uacute;čov. Prechod pravidelnou mriežkou, r&ocirc;zne druhy stavov a shader programov (generovanie l&uacute;ča, prechod mriežkou, zistenie obsadenosti mrežovej bunky, v&yacute;počet prieniku l&uacute;ča a trojuholn&iacute;ka, opustenie priestoru). Jednoduchš&iacute; sp&ocirc;sob s pomocou CUDA, OpenCL.</p>
-<p>4.	Tiene, typy tieňov (m&auml;kk&eacute;, tvrd&eacute;, statick&eacute;, dynamick&eacute;), typy a popis algoritmov (projekčn&eacute;, tieňov&eacute; objemy, tieňov&eacute; mapy), sp&ocirc;soby implement&aacute;cie jednotliv&yacute;ch algoritmov, artefakty a ich odstraňovanie, pr&iacute;klad shader programov pre tieňov&eacute; mapy.</p>
-<p>a.       Z&aacute;kladn&yacute; princ&iacute;p tieňa, polotieň. Predspracovanie pre statick&eacute; tiene a svetl&aacute;.</p>
-<p>b.      Projekčn&eacute; tiene, v&yacute;hody a nev&yacute;hody, použitie stencil buffera na orezanie.</p>
-<p>c.       Tieňov&eacute; objemy a z&aacute;kladn&yacute; princ&iacute;p algoritmu, definovanie a hladanie siluety, vytvorenie tieňov&yacute;ch telies, použitie stencil buffera, depth pass a depth fail princ&iacute;p.</p>
-<p>d.      Tieňov&eacute; mapy, z&aacute;kladn&yacute; princ&iacute;p, dvojprechodov&eacute; renderovanie do text&uacute;ry, použitie s&uacute;radnicov&yacute;ch priestorov pri oboch prechodoch,</p>
-<p>e.       Artefakty sp&ocirc;soben&eacute; diskretiz&aacute;ciou, nepresnosťou depth buffera, pr&iacute;liš strmej projekcie. Odstraňovanie artefaktou pomocou rozdelenia sc&eacute;ny, filtr&aacute;cie depth text&uacute;ry (PCF).</p>
-<p>f.       Pr&iacute;klad vertex a fragment programov pre oba prechody v algoritme tieňov&yacute;ch m&aacute;p.</p>
-<p>5.	Fin&aacute;lne spracovanie vykreslen&eacute;ho obrazu, hĺbka ostrosti, rozmazanie pri pohybe, HDR a zv&yacute;raznenie svetiel, SSAO, filtrovanie obrazu, forward a deffered pr&iacute;stup, pr&iacute;klad shader programov  pre jeden z efektov.</p>
-<p>a.       Porovnanie forward a defferred pr&iacute;stupu pri vykresľovan&iacute; sc&eacute;ny. Spracovanie v&yacute;sledku v obrazovom priestore.</p>
-<p>b.      Pop&iacute;sať spom&iacute;nan&eacute; efekty a sp&ocirc;soby ich implement&aacute;cie. Použ&iacute;vanie color, depth, normal bufferov. Pri SSAO spomen&uacute;ť aj viacero pr&iacute;stupov.</p>
-<p>c.       Float text&uacute;ry pri HDR, pr&iacute;klad jednoduch&eacute;ho tone mapping shadera, zv&yacute;razňovac&iacute; efekt.</p>
-<p>d.	Gaussovsk&aacute; filtr&aacute;cia text&uacute;r, jedno a dvoj prechodov&aacute;, na čo všetko sa použ&iacute;va.</p>
-<p>    * Bezstratov&eacute; k&oacute;dy v kompresii d&aacute;t &ndash; posuvn&eacute;, predikčn&eacute;, k&oacute;dovanie obrysov (kont&uacute;r, hran&iacute;c); rekonštrukcia obrazov &ndash; oper&aacute;cie opisuj&uacute;ce vznik poškodenia, met&oacute;dy odstraňovania šumov.</p>
-<p>    * Hľadanie pr&iacute;znakov v obrazoch; klasifik&aacute;tory (NN, SVM, HMM, ...); aplik&aacute;cie poč&iacute;tačov&eacute;ho videnia (v&yacute;ber obrazov z datab&aacute;zy, detekcia a sledovanie tv&aacute;re, pokožky); mapovanie farebn&eacute;ho rozsahu, HDR; kvalita obrazu (metriky, vyuzitie).</p>
-<p>    * Rozpozn&aacute;vanie obrazcov (line&aacute;rne) separabiln&yacute;ch a neseparabiln&yacute;ch tried; štatistick&eacute; rozpozn&aacute;vanie separabiln&yacute;ch tried; štatistick&eacute; rozpozn&aacute;vanie neseparabiln&yacute;ch tried; syntaktick&eacute; rozpozn&aacute;vanie; porovnanie štatistick&yacute;ch, syntaktick&yacute;ch a ďalš&iacute;ch met&oacute;d rozpozn&aacute;vania.</p>
-<p>    * Objemov&eacute; met&oacute;dy na vizualiz&aacute;ciu objemov&yacute;ch d&aacute;t; povrchov&eacute; met&oacute;dy na vizualiz&aacute;ciu objemov&yacute;ch d&aacute;t.</p>
-<p>    * Voronoiov diagram, Delaunayova triangul&aacute;cia, vlastnosti a vzťahy medzi  nimi; defin&iacute;cia a z&aacute;kladn&eacute; vlastnosti VD a DT, ich du&aacute;lny vzťah, vzťah s konvexn&yacute;m obalom, najbližš&iacute;m p&aacute;rom gener&aacute;torov, vzťah medzi DT, VD a rotačn&yacute;m paraboloidom z=x*x+y*y, podgrafy DT.</p>
-<p>    * Casteljauov algoritmus vyč&iacute;sľovania B&eacute;zierovej krivky, prerozdelenie, dotyčnica, pol&aacute;rna forma; sch&eacute;ma Casteljauovho algoritmu, zjemnenie krivky na dva segmenty, dotykov&yacute; vektor krivky, pol&aacute;rna forma polyn&oacute;mu a jej vlastnosti, riadiace vrcholy krivky ako hodnoty pol&aacute;rnej formy, vzťah Casteljauovho algoritmu a pol&aacute;rnej formy, hladk&eacute; spojenie B&eacute;zierovych segmentov.</p>
-<p>    * Grafika a zvuk &ndash; aplikačn&yacute; software; z&aacute;kladn&eacute; grafick&eacute; a zvukov&eacute; form&aacute;ty;  kompresn&eacute; met&oacute;dy; met&oacute;dy vytv&aacute;rania a zav&aacute;dzania grafiky a zvuku do PC; anim&aacute;cia, video, TV HDTV; videoform&aacute;ty a kompresia videa; neline&aacute;rny videostrih (NLE); mobiln&eacute;, komunikačn&eacute; a multimedi&aacute;lne technol&oacute;gie; multim&eacute;di&aacute; a internet; hyperm&eacute;di&aacute; a videokonferencie; synchroniz&aacute;cia multimedi&aacute;lnych tokov.</p>
+<div class="hodnota">
+
+<h2>Počítačová grafika</h2>
+
+<div class="indent">
+	<h3>Normy</h3>
+	<p>1. Referenčn&yacute; model poč&iacute;tačovej grafiky, s&uacute;radnicov&eacute; syst&eacute;my a ich transformacie, rozširenie modelu pre augmented reality</p>
+	<p>2. Pracovna stanica a jej funkčnosť</p>
+	<p>3. K&oacute;dovanie grafickej informacie</p>
+	<p>4. Hierarchia obrazu a graf sc&eacute;ny;</p> 
+	<p>5. Fyzick&eacute; a logick&eacute; vstupn&eacute; zariadenia, ISO model vstupu, vstupn&eacute; režimy, programovanie interakcie</p>
+	<p>6. Oknov&eacute; syst&eacute;my, ich strukt&uacute;ra a funkčnosť.</p>
+</div>
+<hr />
+<div class="indent">
+<h3>PG(2)</h3>
+<p>1. Kan&aacute;l met&oacute;dy sledovania l&uacute;ča </p>
+<p>2. V&yacute;počet farieb renderovacou rovnicou </p>
+<p>3. Probl&eacute;m viditeľnosti a tieňa </p>
+<p>4. Glob&aacute;lny osvetľovac&iacute; model </p>
+<p>5. Met&oacute;dy zobrazenia sc&eacute;ny množinou obr&aacute;zkov.</p>
+<p>6. Objemov&eacute; met&oacute;dy na vizualiz&aacute;ciu objemov&yacute;ch d&aacute;t</p>
+<p>7. Povrchov&eacute; met&oacute;dy na vizualiz&aacute;ciu objemov&yacute;ch d&aacute;t.</p>
+
+</div>
+<hr />
+<div class="indent">
+		<h3>Multimédiá</h3>
+<p>1. Grafika a zvuk - aplikačn&yacute; software</p>
+<p>2. Z&aacute;kladn&eacute; grafick&eacute; a zvukov&eacute; form&aacute;ty</p>  
+<p>3. Kompresn&eacute; met&oacute;dy; met&oacute;dy vytv&aacute;rania a zav&aacute;dzania grafiky a zvuku do PC</p>
+<p>4. Anim&aacute;cia, video, TV HDTV</p>
+<p>5. Videoform&aacute;ty a kompresia videa</p>
+<p>6. Neline&aacute;rny videostrih (NLE)</p>
+<p>7. Mobiln&eacute;, komunikačn&eacute; a multimedi&aacute;lne technol&oacute;gie</p>
+<p>8. Multim&eacute;di&aacute; a internet</p> 
+<p>9. Hyperm&eacute;di&aacute; a videokonferencie</p>
+<p>10. synchroniz&aacute;cia multimedi&aacute;lnych tokov.</p>
+
+</div>
+<hr />
+<div class="indent">
+	<h3>Realtime Grafika</h3>
+	<p> 1.	Grafick&aacute; pipeline modern&eacute;ho hardv&eacute;ru, framebuffer, buffer objekty, použ&iacute;van&eacute; s&uacute;radnicov&eacute; priestory, druhy shader programov, renderovanie do text&uacute;ry, druhy optimalizačn&yacute;ch techn&iacute;k (frustum, occlusion, backface culling), pr&iacute;klad shader programov. Tieňovanie a text&uacute;rovanie, z&aacute;kladn&eacute; princ&iacute;py a rozdiely medzi jednotliv&yacute;mi mapovaniami (environment, cube, sphere, bump, normal, paralax, relief), tangenci&aacute;lny priestor (na co sl&uacute;ži, v&yacute;počet). </p>
+	<p class="indent">a.       Z&aacute;kladn&eacute; členenie zobrazovacieho kan&aacute;lu, per-vertex oper&aacute;cie a transform&aacute;cie, rasteriz&aacute;cia, per-fragment oper&aacute;cie, framebuffer je množina bufferov do ktor&yacute;ch sa zapisuje v&yacute;sledok pri vykresľovan&iacute;, z ak&yacute;ch bufferov sa sklad&aacute;(color, depth, stencil).</p>
+	<p class="indent">b.      Pop&iacute;sať sp&ocirc;soby zad&aacute;vania geometrie a r&ocirc;znych atrib&uacute;tov vrcholov, rozdiel medzi vertex arrays a vertex buffer objects.</p>
+	<p class="indent">c.       S&uacute;radnicov&eacute; syst&eacute;my a transform&aacute;cie medzi nimi, lok&aacute;lny, svetov&yacute;, kamerov&yacute;, orez&aacute;vac&iacute;, normalizovan&yacute; priestor</p>
+	<p class="indent">d.      Pop&iacute;sať vertex, geometry, tesselation, fragment, compute shader, ich v&yacute;znam v r&aacute;mci pipeline, jeden jednoduch&yacute; pr&iacute;klad vertex+fragment programov, m&ocirc;že byť v pseudok&oacute;de</p>
+	<p class="indent">e.       Vykresľovanie do text&uacute;ry miesto na obrazovku, použitie frame buffer objektov(FBO), na čo sa to použ&iacute;va, vykresľovanie do viacer&yacute;ch text&uacute;r naraz.</p>
+	<p class="indent">f.       Pop&iacute;sať frustum, occlusion, backface culling, ako vedia ovplyvniť vykresľovanie.</p>
+	<p>2.	Lok&aacute;lne osvetľovacie modely, text&uacute;rovanie a druhy text&uacute;r, mapovanie a filtr&aacute;cia text&uacute;r, pop&iacute;sať princ&iacute;py environment, bump, normal mapovania, text&uacute;rovac&iacute; a tangenci&aacute;lny priestor, pr&iacute;klad shader programov.</p>
+	<p class="indent">a.       Phongov a Blinn-Phongov osvetlovac&iacute; model, zložky(ambientna, dif&uacute;zna, zrkadlov&aacute;) a parametre v osvetľovacej rovnici (materi&aacute;ly, svetl&aacute;, vektory N, V, L, R, H). Pr&iacute;klady ďalš&iacute;ch osvetľovac&iacute;ch modelov (Oren-Nayar, Cook-Torrance)</p>
+	<p class="indent">b.      Druhy text&uacute;r a ich s&uacute;vislosť s osvetľovacou rovnicou (dif&uacute;zna, gloss, norm&aacute;lov&aacute;, bump text&uacute;ra). Text&uacute;rovac&iacute; priestor a jeho použitie pre mapovanie text&uacute;r. Wrap m&oacute;dy pri text&uacute;rovan&iacute;. Nearest a biline&aacute;rna filtr&aacute;cia text&uacute;r.</p>
+	<p class="indent">c.       Pop&iacute;sať tangenci&aacute;lny priestor ako rozš&iacute;renie text&uacute;rovacieho priestoru, d&ocirc;vod jeho použitia. Transform&aacute;cia z tangeni&aacute;lneho do objektov&eacute;ho priestoru, v&yacute;počet tejto transform&aacute;cie. Použitie pre normal mapping.</p>
+	<p class="indent">d.      Pr&iacute;klad Phongovho osvetľovacieho modelu s použit&iacute;m vertex a fragment programov.</p>
+	<p>3.	Glob&aacute;lne osvetľovacie modely na GPU, aproxim&aacute;cia odrazov a priehľadnosti, met&oacute;da sledovania l&uacute;ča na GPU, ur&yacute;chľovacie techniky.</p>
+	<p class="indent">a.       Rozdiel medzi lok&aacute;lnym a glob&aacute;lnym osvetľovac&iacute;m modelom. Jednoduch&eacute; aproxim&aacute;cie glob&aacute;lneho osvetľovanie (použitie množstva priamich svetiel, light proxies, light probes).</p>
+	<p class="indent">b.      Alfa blending pre jednoduch&uacute; priehľadnosť. Renderovanie do text&uacute;r a určenie reflection a refraction m&aacute;p. Fresnelov efekt a jeho v&yacute;počet. Renderovanie vodnej hladiny.</p>
+	<p class="indent">c.       Reprezent&aacute;cia sc&eacute;ny pri GPU raytracingu. Paralern&eacute; spracovanie l&uacute;čov. Prechod pravidelnou mriežkou, r&ocirc;zne druhy stavov a shader programov (generovanie l&uacute;ča, prechod mriežkou, zistenie obsadenosti mrežovej bunky, v&yacute;počet prieniku l&uacute;ča a trojuholn&iacute;ka, opustenie priestoru). Jednoduchš&iacute; sp&ocirc;sob s pomocou CUDA, OpenCL.</p>
+	<p>4.	Tiene, typy tieňov (m&auml;kk&eacute;, tvrd&eacute;, statick&eacute;, dynamick&eacute;), typy a popis algoritmov (projekčn&eacute;, tieňov&eacute; objemy, tieňov&eacute; mapy), sp&ocirc;soby implement&aacute;cie jednotliv&yacute;ch algoritmov, artefakty a ich odstraňovanie, pr&iacute;klad shader programov pre tieňov&eacute; mapy.</p>
+	<p class="indent">a.       Z&aacute;kladn&yacute; princ&iacute;p tieňa, polotieň. Predspracovanie pre statick&eacute; tiene a svetl&aacute;.</p>
+	<p class="indent">b.      Projekčn&eacute; tiene, v&yacute;hody a nev&yacute;hody, použitie stencil buffera na orezanie.</p>
+	<p class="indent">c.       Tieňov&eacute; objemy a z&aacute;kladn&yacute; princ&iacute;p algoritmu, definovanie a hladanie siluety, vytvorenie tieňov&yacute;ch telies, použitie stencil buffera, depth pass a depth fail princ&iacute;p.</p>
+	<p class="indent">d.      Tieňov&eacute; mapy, z&aacute;kladn&yacute; princ&iacute;p, dvojprechodov&eacute; renderovanie do text&uacute;ry, použitie s&uacute;radnicov&yacute;ch priestorov pri oboch prechodoch,</p>
+	<p class="indent">e.       Artefakty sp&ocirc;soben&eacute; diskretiz&aacute;ciou, nepresnosťou depth buffera, pr&iacute;liš strmej projekcie. Odstraňovanie artefaktou pomocou rozdelenia sc&eacute;ny, filtr&aacute;cie depth text&uacute;ry (PCF).</p>
+	<p class="indent">f.       Pr&iacute;klad vertex a fragment programov pre oba prechody v algoritme tieňov&yacute;ch m&aacute;p.</p>
+	<p>5.	Fin&aacute;lne spracovanie vykreslen&eacute;ho obrazu, hĺbka ostrosti, rozmazanie pri pohybe, HDR a zv&yacute;raznenie svetiel, SSAO, filtrovanie obrazu, forward a deffered pr&iacute;stup, pr&iacute;klad shader programov  pre jeden z efektov.</p>
+	<p class="indent">a.       Porovnanie forward a defferred pr&iacute;stupu pri vykresľovan&iacute; sc&eacute;ny. Spracovanie v&yacute;sledku v obrazovom priestore.</p>
+	<p class="indent">b.      Pop&iacute;sať spom&iacute;nan&eacute; efekty a sp&ocirc;soby ich implement&aacute;cie. Použ&iacute;vanie color, depth, normal bufferov. Pri SSAO spomen&uacute;ť aj viacero pr&iacute;stupov.</p>
+	<p class="indent">c.       Float text&uacute;ry pri HDR, pr&iacute;klad jednoduch&eacute;ho tone mapping shadera, zv&yacute;razňovac&iacute; efekt.</p>
+	<p class="indent">d.	Gaussovsk&aacute; filtr&aacute;cia text&uacute;r, jedno a dvoj prechodov&aacute;, na čo všetko sa použ&iacute;va.</p>
+</div>
+<h2>Videnie</h2>
+<div class="indent">
+	<p>1. Pokročil&eacute; techniky predspracovania obrazu</p>
+	<p>2. Techniky rozpozn&aacute;vania objektov</p>
+	<p>3. Porozumenie 3D obrazu</p>
+	<p>4. Poč&iacute;tačov&eacute; videnie s jednou kamerou</p>
+	<p>5. stereovidenie.</p>
+</div>
+<hr />
+<div class="indent">
+	<p>1. Hľadanie pr&iacute;znakov v obrazoch</p>
+	<p>2. Klasifik&aacute;tory (NN, SVM, HMM, ...)</p>
+	<p>3. Aplik&aacute;cie poč&iacute;tačov&eacute;ho videnia (v&yacute;ber obrazov z datab&aacute;zy, detekcia a sledovanie tv&aacute;re, pokožky)</p>
+	<p>4. Mapovanie farebn&eacute;ho rozsahu, HDR</p> 
+<p>5. kvalita obrazu (metriky, vyuzitie).</p>
+</div>
+<hr />
+<div class="indent">
+	<h3>Rozpoznávanie obrazcov</h3>
+	<p>1. Rozpozn&aacute;vanie obrazcov (line&aacute;rne) separabiln&yacute;ch a neseparabiln&yacute;ch tried </p>
+	<p>2. štatistick&eacute; rozpozn&aacute;vanie separabiln&yacute;ch tried; </p>
+	<p>3.štatistick&eacute; rozpozn&aacute;vanie neseparabiln&yacute;ch tried; </p>
+	<p>4.syntaktick&eacute; rozpozn&aacute;vanie; </p>
+	<p>5.porovnanie štatistick&yacute;ch, syntaktick&yacute;ch a ďalš&iacute;ch met&oacute;d rozpozn&aacute;vania.</p>
+</div>
+
+	<h2>Kompresia</h2>
+	
+<div class="indent">
+<p>1. Bezstratov&eacute; k&oacute;dy v kompresii d&aacute;t &ndash; posuvn&eacute;, predikčn&eacute;, k&oacute;dovanie obrysov (kont&uacute;r, hran&iacute;c)</p>
+<p>2. Rekonštrukcia obrazov &ndash; oper&aacute;cie opisuj&uacute;ce vznik poškodenia, met&oacute;dy odstraňovania šumov.</p>
+</div>
+	<h2>Geometria</h2>
+<div class="indent">	
+	<p>1. Kuželosečky, ich klasifik&aacute;cia; z&aacute;vislosť klasifik&aacute;cie od typu roviny</p>
+	<p>2. vyšetrovanie tvaru rovinnej krivky; priesečn&iacute;ky priamky s krivkou, dotyčnica, singul&aacute;rne body, inflexn&eacute; body</p>
+	<p>3. kubick&eacute; krivky</p>
+	<p>4. weierstrassov norm&aacute;lny tvar</p>
+	<p>5. wliptick&eacute; krivky a ich využitie.</p>
+</div>
+<hr />
+<div class="indent">
+	<p>1. Voronoiov diagram, Delaunayova triangul&aacute;cia, vlastnosti a vzťahy medzi  nimi</p>
+	<p>2. defin&iacute;cia a z&aacute;kladn&eacute; vlastnosti VD a DT, ich du&aacute;lny vzťah, vzťah s konvexn&yacute;m obalom, najbližš&iacute;m p&aacute;rom gener&aacute;torov, vzťah medzi DT, VD a rotačn&yacute;m paraboloidom z=x*x+y*y, podgrafy DT.</p>
+</div>
+<hr />
+<div class="indent">
+	<p>1. Casteljauov algoritmus vyč&iacute;sľovania B&eacute;zierovej krivky, prerozdelenie, dotyčnica, pol&aacute;rna forma</p>
+	<p>2. Sch&eacute;ma Casteljauovho algoritmu, zjemnenie krivky na dva segmenty, dotykov&yacute; vektor krivky, pol&aacute;rna forma polyn&oacute;mu a jej vlastnosti, riadiace vrcholy krivky ako hodnoty pol&aacute;rnej formy, vzťah Casteljauovho algoritmu a pol&aacute;rnej formy, hladk&eacute; spojenie B&eacute;zierovych segmentov.</p>
+</div>
+
 </div>
 </td>
 </tr>
